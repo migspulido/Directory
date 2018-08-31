@@ -1,0 +1,2361 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0064)http://fp21.a2zinc.net/clients/fpcmp/esc09/public/floorPlan.aspx -->
+<HTML><HEAD><TITLE>Embedded Systems Conference, Silicon Valley 2009</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8"><!--Added by vijay to get content info for a page--><!--Changed by vijay to get content info for a page--><!--/Changed by vijay to get content info for a page--><!--link rel='StyleSheet' href='../include/tree.css' type='text/css'>--><LINK 
+href="floorPlan_files/interface.css" type=text/css rel=stylesheet><LINK 
+href="floorPlan_files/gstyle.css" type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript src=""></SCRIPT>
+
+<SCRIPT language=JavaScript src=""></SCRIPT>
+
+<SCRIPT language=javascript src="floorPlan_files/rollover.js"></SCRIPT>
+
+<SCRIPT language=javascript src="floorPlan_files/Common.js"></SCRIPT>
+
+<SCRIPT language=javascript src=""></SCRIPT>
+<!--[if IE]>
+<STYLE type=text/css>#Mnav {
+	WIDTH: 150px
+}
+#Mnav DIV {
+	MARGIN-LEFT: 0px; WIDTH: 99%
+}
+#Mnav DIV A {
+	FONT-SIZE: 10px; COLOR: #ffffff
+}
+#Mnav DIV A {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: #666666 1px solid; TEXT-DECORATION: none
+}
+.MainMenu {
+	MARGIN-TOP: 0px; DISPLAY: block; MARGIN-RIGHT: -10%
+}
+.MainMenu A {
+	FONT-SIZE: 10px; COLOR: #990000; BORDER-BOTTOM: #666666 1px solid
+}
+.MainMenu A {
+	DISPLAY: block; MARGIN: 0px; WIDTH: 100%; BORDER-BOTTOM: #666666 1px solid; TEXT-DECORATION: none
+}
+.MenuImage {
+	FLOAT: right; MARGIN-BOTTOM: -10px; POSITION: relative; TOP: -15px
+}
+#Mnav DIV DIV A {
+	BORDER-RIGHT: #666666 1px solid; DISPLAY: block; FONT-SIZE: 10px; WIDTH: 100%; COLOR: #333333; BORDER-BOTTOM: #666666 2px solid; BACKGROUND-COLOR: gainsboro
+}
+</STYLE>
+<![endif]-->
+<META content="MSHTML 6.00.6000.16809" name=GENERATOR></HEAD>
+<BODY leftMargin=0 topMargin=0 onload=SetExpandImage();ShowHideMenu() 
+marginheight="0" marginwidth="0">
+<DIV id=maincontent>
+<FORM id=frmMain name=frmMain action=floorPlan.aspx method=post 
+encType=multipart/form-data><INPUT type=hidden 
+value=dDw5MDk4MjgzNzE7Oz75B7gTWucJz29218kHCdnfTyJndA== name=__VIEWSTATE> 
+<TABLE border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE id=tblMain cellSpacing=0 cellPadding=0 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top></TD></TR>
+        <TR>
+          <TD vAlign=top>
+            <TABLE id=tblContents cellSpacing=0 cellPadding=0 bgColor=#ffffff 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD class=content vAlign=top width=620>
+                  <P><SPAN id=lblShowErrorMessage></SPAN></P>
+                  <P><BR><BR></P>
+                  <SCRIPT>
+	function LoadFloorPlan(Mapid)
+	{
+		this.location.href = 'floorplan.aspx?Mapid=' + Mapid ;
+	}
+	// Function added by Nitin for highlight of booths.
+	function LocateBooths(BoothIDs)
+	{
+		
+		var strSplitBoothIds="";
+		var intForLoop=0;
+		var strBoothID="";
+		var strImgBoothID="";
+		var topPosition=0;
+		var leftPosition=0;
+		var intHighlight=0;
+		strBoothIds=BoothIDs;
+		
+		if(strBoothIds != "")
+		{
+			strSplitBoothIds=strBoothIds.split(",");
+			for(intForLoop=0;intForLoop<=strSplitBoothIds.length-1;intForLoop++)
+			{	
+				strBoothID="BoothID"+strSplitBoothIds[intForLoop];
+				strImgBoothID="img"+strSplitBoothIds[intForLoop];
+				
+				
+				if(document.getElementById(strBoothID) != null && document.getElementById(strImgBoothID) != null)
+				{	
+					document.getElementById(strBoothID).style.filter = "Alpha(Opacity=100)";
+					//Modified by BA for #4053
+					//document.getElementById(strImgBoothID).style.borderWidth=2;
+					//document.getElementById(strImgBoothID).style.borderColor="#FF9933";
+					document.getElementById(strImgBoothID).style.borderWidth=3;
+					document.getElementById(strImgBoothID).style.borderColor="#FF6633";
+					document.getElementById(strImgBoothID).style.borderStyle="solid";
+					if(intHighlight==0)
+					{
+						topPosition=document.getElementById(strBoothID).style.top;
+						leftPosition=document.getElementById(strBoothID).style.left;
+						window.scrollTo(leftPosition.replace('px','')-window.screen.width/2,eval(topPosition.replace('px','')-window.screen.height/2));
+						intHighlight=1;
+					}
+				}
+				
+			}
+		}
+		
+	}
+	// Function added by nitin which will get executes at body load.
+	function ExecuteAtBodyLoad()
+	{
+		LocateBooths("");
+	}
+</SCRIPT>
+
+                  <SCRIPT language=javascript id=clientEventHandlersJS>
+<!--
+function window_onload() 
+{
+	SetExpandImage();
+	//ShowHideMenu();
+	//SetFooterPosition();
+	ExecuteAtBodyLoad();	
+	if (document.getElementById('ControlPanel'))
+	{		
+		//setColorOnload();
+	}
+		
+}
+function SetFooterPosition()
+{
+	var strtop= document.getElementById('divBottom').style.top;
+	//var strDivBottomHeight = document.getElementById('divBottom').height;
+	//alert(eval(strtop.substring(0,strtop.indexOf("p"))));
+	//alert(eval(strtop.substring(0,strtop.indexOf("p"))) + eval(strDivBottomHeight.substring(0,strDivBottomHeight.indexOf("p"))));
+	//document.getElementById('footer1').style.top = eval(strtop.substring(0,strtop.indexOf("p"))) + eval(strDivBottomHeight.substring(0,strDivBottomHeight.indexOf("p"))) + 50;
+	document.getElementById('footer1').style.position = 'absolute';
+	document.getElementById('footer2').style.position = 'absolute';
+	document.getElementById('footer1').style.top = eval(strtop.substring(0,strtop.indexOf("p"))) + 400;
+	document.getElementById('footer2').style.top = eval(strtop.substring(0,strtop.indexOf("p"))) + 550;	
+
+}
+
+
+//-->
+</SCRIPT>
+
+                  <SCRIPT language=JavaScript>
+		/* Global Variables */
+		var XMLFileName = 'XMLSearch.aspx';
+		var strBoothIds="";
+		var IE = document.all?true:false;
+		var req;
+		
+		function keepup(ev) 
+		{
+			if (mousein)
+			{
+				if (IE==true)
+				{
+					overDiv.style.left = event.clientX + document.body.scrollLeft;
+					overDiv.style.top = event.clientY + document.body.scrollTop //+ 20;
+				}
+				else
+				{
+					//Modified by Bhavana on 05-Jan-2006 for #3439
+					document.getElementById('overDiv').style.left = ev.pageX;					
+					document.getElementById('overDiv').style.top = (ev.pageY)+10;
+				}
+			}
+		}
+		function popup (ev,pr,str)
+		{
+			if (pr != 'Yes')
+			{
+				mousein = true;
+				document.getElementById('overDiv').innerHTML = str;
+				keepup(ev);
+				document.getElementById('overDiv').style.display = "";
+			}
+		}
+		function resolve()
+		{
+			mousein = false;
+			document.getElementById('overDiv').style.display = "none";
+		}
+		function clickBooth(pr,lnk,boothid,eventid,langid,ProductType)
+		{
+			if (pr != 'Yes')
+			{
+				//if (ProductType=='fp')
+					window.open(lnk);
+				//else
+				//	document.location.href=lnk
+			}
+		}
+		function imgerr()
+		{
+			document.getElementById('FloorPlan').style.visibility="hidden";
+			document.getElementById('lblShowErrorMessage').innerHTML = "<b><font color=red>Floorplan not available for this event</font></b><br>"
+		}
+		
+	
+		function DeLocateBooths(BoothIDs)
+		{
+		
+			var strSplitBoothIds="";
+			var intForLoop=0;
+			var strBoothID="";
+			var strImgBoothID="";
+			var topPosition=0;
+			var leftPosition=0;
+			strBoothIds=BoothIDs;
+
+			
+			if(strBoothIds != "")
+			{
+				strSplitBoothIds=strBoothIds.split(",");
+				for(intForLoop=0;intForLoop<=strSplitBoothIds.length-1;intForLoop++)
+				{
+					strBoothID="BoothID"+strSplitBoothIds[intForLoop];
+					strImgBoothID="img"+strSplitBoothIds[intForLoop];
+					if(document.getElementById(strBoothID) != null  && document.getElementById(strImgBoothID) != null)
+					{
+						document.getElementById(strBoothID).style.filter = "Alpha(Opacity=0)";
+						document.getElementById(strImgBoothID).style.borderWidth=0;
+						document.getElementById(strImgBoothID).style.borderColor="";
+						document.getElementById(strImgBoothID).style.borderStyle="";				
+					}
+				}
+			}
+			
+		}
+		function HighlightBooths()
+		{
+			var items = req.responseXML.getElementsByTagName("INFO");			
+			// DeLocatebooths previously selected booths.
+			DeLocateBooths(strBoothIds);
+			strBoothIds="";
+			for (var lnLoopCnt=0; lnLoopCnt<items.length; lnLoopCnt++)
+			{
+				strBoothIds=items[lnLoopCnt].getAttribute("BOOTHID")+","+strBoothIds;
+			}
+			strBoothIds=strBoothIds.substring(0,strBoothIds.length-1);			
+			LocateBooths(strBoothIds);
+		}
+		
+		/* Functions for XML document. */
+		function Verify()
+		{ 
+			/*Commented for MAC if(XMLDoc.readyState!=4)return false; */
+			if (req.readyState!=4)
+			{
+				return false;
+			}
+			else
+			{				
+				HighlightBooths();
+			}
+		}
+		function loadXML(url)
+		{
+			if (window.XMLHttpRequest)
+			{
+				req = new XMLHttpRequest();
+				req.onreadystatechange = Verify;
+				req.open("GET", url, true);
+				req.send(null);
+			}
+			else if (window.ActiveXObject)
+			{
+				req = new ActiveXObject("Microsoft.XMLHTTP");
+				if (req)
+				{
+					req.onreadystatechange = Verify;
+					req.open("GET", url, true);
+					req.send(null);
+				}
+			}
+        }
+        function GetCategories()
+        {
+			var strProductID="";
+			var strSubProdCatText ="";
+			var strSubProdCatID ="";
+			
+			strProductID=document.frmMain.ddlCategory.options[document.frmMain.ddlCategory.selectedIndex].value;
+			strSubProdCatText = strProductID.substr(0, 1);			
+			if (strSubProdCatText=="S")
+			{
+				strSubProdCatID = strProductID.substr(1, strProductID.length-1);
+				
+				loadXML(XMLFileName+"?MapID="+document.frmMain.hdnMapId.value+"&SubProdCatID="+strSubProdCatID+"&Task=SubProdCategory");		
+			}
+			else
+			{
+				loadXML(XMLFileName+"?MapID="+document.frmMain.hdnMapId.value+"&ProductID="+strProductID+"&Task=Category");		
+			}
+		}
+		
+		function floatMenu() 
+		{		
+			//alert(document.getElementById('ControlPanel').style.top);	
+					
+			if (document.body.scrollTop <= 380)
+			{
+				document.getElementById('ControlPanel').style.top = 170; //350;
+			}
+			else
+			{
+				document.getElementById('ControlPanel').style.top = 0 + document.body.scrollTop;
+			}
+			
+			
+		}		
+		//window.onscroll = floatMenu;
+		
+</SCRIPT>
+                  <SPAN id=lblLegend><BR><BR></SPAN>
+                  <DIV id=divZoom>
+                  <P>
+                  <p><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR></DIV><SPAN 
+                  id=ControlPanel 
+                  style="FONT-SIZE: 10px; Z-INDEX: 103; FILTER: Alpha(Opacity=100); LEFT: 20px; POSITION: absolute; TOP: 160px">
+                  <SCRIPT language=javascript>
+	
+		
+		function ResetFloor()
+		{
+			var img, BoothID, BoothIDTag, boothLabelTag
+			
+			ResetControls();
+						
+			for(i=0;i< arrHighlightedBooths.length;i++)	
+			{
+				BoothID=arrHighlightedBooths[i][0];
+				img = "img"+ BoothID;					
+		
+				BoothIDTag="BoothID"+ BoothID;
+				if(document.getElementById(BoothIDTag) != null)
+				{
+					
+					document.getElementById(BoothIDTag).style.filter = "Alpha(Opacity=0)"
+					document.getElementById(img).src= "../images/booth/Booth.gif";
+					document.getElementById(img).style.borderWidth=0;
+				
+					document.getElementById(img).style.borderColor = "#000000";
+				}	
+			}
+			
+			arrHighlightedBooths = new Array();
+			count = 0
+			document.frmMain.SearchBooth.disabled=false;
+			
+		}
+		function ResetBooths()
+		{
+			var img, BoothID, BoothIDTag, boothLabelTag			
+						
+			for(i=0;i< arrHighlightedBooths.length;i++)	
+			{
+				BoothID=arrHighlightedBooths[i][0];
+				img = "img"+ BoothID;					
+		
+				BoothIDTag="BoothID"+ BoothID;
+				if(document.getElementById(BoothIDTag) != null)
+				{
+					
+					document.getElementById(BoothIDTag).style.filter = "Alpha(Opacity=0)"
+					document.getElementById(img).src= "../images/booth/Booth.gif";
+					document.getElementById(img).style.borderWidth=0;
+				
+					document.getElementById(img).style.borderColor = "#000000";
+				}	
+			}			
+			arrHighlightedBooths = new Array();
+			count = 0
+		}
+		
+		function ResetControls()
+		{	
+			if(document.frmMain.ctlTexturing_ddlPavilion)
+			{		
+			document.frmMain.ctlTexturing_ddlPavilion.selectedIndex=0;
+			}
+			if(document.frmMain.ctlTexturing_ddlCategory)
+			{
+			document.frmMain.ctlTexturing_ddlCategory.selectedIndex=0;
+			}
+			//document.frmMain.ctlTexturing_ddlSubCategory.selectedIndex=0;
+			//document.frmMain.ctlTexturing_ddlSubCategory.options.length = 1;
+			if(document.frmMain.ctlTexturing_txtWidth)
+			{
+			document.frmMain.ctlTexturing_txtWidth.value="";
+			}
+			if(document.frmMain.ctlTexturing_txtHeight)
+			{
+			document.frmMain.ctlTexturing_txtHeight.value="";
+			}
+			if(document.frmMain.ctlTexturing_txtArea)
+			{
+			document.frmMain.ctlTexturing_txtArea.value="";
+			}
+			if(document.frmMain.ctlTexturing_ddlHall)
+			{
+			document.frmMain.ctlTexturing_ddlHall.selectedIndex=0;
+			}
+			if(document.frmMain.ctlTexturing_ddlBoothStatus)
+			{
+			document.frmMain.ctlTexturing_ddlBoothStatus.selectedIndex=0;
+			}
+			if(document.frmMain.ctlTexturing_ddlSubExpo)
+			{
+			document.frmMain.ctlTexturing_ddlSubExpo.selectedIndex=0;
+			}
+			if(document.frmMain.ctlTexturing_ddlMoveIn)
+			{
+			document.frmMain.ctlTexturing_ddlMoveIn.selectedIndex=0;
+			}
+			if(document.frmMain.ctlTexturing_ddlMoveOut)
+			{
+			document.frmMain.ctlTexturing_ddlMoveOut.selectedIndex=0;
+			}
+			if(document.frmMain.ctlTexturing_ddlCompOperator)
+			{
+			document.frmMain.ctlTexturing_ddlCompOperator.selectedIndex=0;
+			}
+			
+		}
+		
+		function setColorOnload()
+		{	
+			var i;
+			var item;				
+			var str;
+			var collOptions = document.frmMain.ctlTexturing_ddlColor.options;			
+			//var collOptions = document.getElementById.('ctlTexturing:ddlColor').options;
+			//alert(collOptions.length);
+			for(i=0;i<collOptions.length;i++)
+			{					
+				item=collOptions[i];
+				str=item.value;				
+				item.style.backgroundColor=item.text;
+				
+			}	
+		}
+		
+		
+		////**********************  Locate Booth Functions  **********************/////
+		var formVisible=false, currentTask="";				
+		var arrHighlightedBooths = Array();
+		var count=0;
+		var XMLFileName = 'BoothXMLDoc.aspx';
+		var EventId='9';
+		var MapId='11';
+		var strTask;
+				
+		// global flag
+		var isIE = false;
+
+		// global request and XML document objects
+		var req;
+		function loadXMLDoc(url) 
+		{
+			if (window.XMLHttpRequest) 
+			{
+				req = new XMLHttpRequest();
+				req.onreadystatechange = processReqChange;
+				req.open("GET", url, true);
+				req.send(null);
+			// branch for IE/Windows ActiveX version
+			} 
+			else if (window.ActiveXObject) 
+			{
+				isIE = true;
+				req = new ActiveXObject("Microsoft.XMLHTTP");
+				if (req) 
+				{
+					
+					req.onreadystatechange = processReqChange;
+					req.open("GET", url, true);
+					req.send();
+				}
+			}
+		}
+		// handle onreadystatechange event of req object
+		function processReqChange() 
+		{
+			// only if req shows "loaded"
+			if (req.readyState == 4) 
+			{
+				// only if "OK"
+				if (req.status == 200) 
+				{
+				//   clearTopicList();
+					buildList();
+				} 
+				else 
+				{
+					
+				}
+			}
+		}
+		
+		function buildList() 
+		{
+			var topPosition=0;
+			var leftPosition=0;
+			var items = req.responseXML.getElementsByTagName("INFO");
+			if (strTask == 'Highlight') 
+			{
+				if(items.length > 0)
+				{
+					//alert("Your search produced a result.");
+					//document.frmMain.SearchBooth.disabled=true;
+				}
+				else
+				{
+					//alert("Your search did not produce any result. Search again");
+					alert("Your search did not produce a result");
+				}
+			}
+			if (strTask == 'Highlight') 
+			{
+				//alert(items.length);
+				for (var i = 0; i < items.length; i++) 
+				{
+					BoothID=items(i).getAttribute("BOOTHID")
+					img = "img"+ BoothID;							
+					BoothIDTag="BoothID"+ BoothID;
+					if(document.getElementById(BoothIDTag) && document.getElementById(img))
+					{
+						if(document.getElementById(BoothIDTag)!=null)
+						{
+							//alert(BoothIDTag);
+							document.getElementById(BoothIDTag).style.filter = "Alpha(Opacity=100)";
+							document.getElementById(img).src= "../images/booth/Booth_Highlighted.gif";
+							//Modified by BA for #4053
+							//document.getElementById(img).style.borderWidth=2;
+							document.getElementById(img).style.borderWidth=3;
+							if(document.frmMain.ctlTexturing_ddlColor)
+							{
+								document.getElementById(img).style.borderColor = document.frmMain.ctlTexturing_ddlColor.value;
+							}
+							else
+							{
+								document.getElementById(img).style.borderColor = 'FF6633';
+							}
+							document.getElementById(img).style.borderStyle="solid";
+							arrHighlightedBooths[count] = new Array();
+							arrHighlightedBooths[count][0] = BoothID;
+							//arrHighlightedBooths[count][1] = document.frmMain.ctlTexturing_ddlColor.value.replace("#", "");
+							arrHighlightedBooths[count][1] = 'FF6633';
+							count= count+1;
+						}
+					}
+				}
+				if (items.length > 0)
+				{
+					topPosition=document.getElementById(BoothIDTag).style.top;
+					leftPosition=document.getElementById(BoothIDTag).style.left;
+					window.scrollTo(leftPosition.replace('px','')-window.screen.width/2,eval(topPosition.replace('px','')-window.screen.height/2));
+				}
+				
+			}	
+		}
+		function appendToSelect(select, value, content) {
+				var opt;
+				opt = document.createElement("option");
+				opt.value = value;
+				opt.appendChild(content);
+				select.appendChild(opt);
+			}
+		//end by anvita
+		function loadXML(XmlFile) 
+		{				
+			XMLDoc.async="false";
+			XMLDoc.onreadystatechange=Verify;
+			XMLDoc.load(XmlFile);
+			XMLBoothDoc=XMLDoc.documentElement; 				      
+		}
+
+		function Verify() 
+		{ 
+			if(XMLDoc.readyState!=4)
+				return false; 
+		}
+
+		function initTraverse(file) 
+		{
+			loadXMLDoc(file);				
+		}
+		var arrHighlightedBooths = Array();
+		var count=0;
+		function LocateBooth()
+		{
+			ResetBooths();
+			var BoothID, img, boothLabelTag, BoothIDTag;
+			var SalesPersonId=PavilionId=SubCatId=ProdCatId=AppId=Width=Height=Area=CompOrPart=HallId=MoveInId=MoveOutId=SubExpoID=0;
+			var CompOperator, QueryString, BoothStatus ;	
+			var StartDate = '';
+			var EndDate = '';
+			var LayOutOnly = '';
+			var strSubProdCatText = '';	
+			BoothStatus = -1;			
+			
+			if(document.frmMain.ctlTexturing_ddlPavilion)
+			{
+				PavilionId=document.frmMain.ctlTexturing_ddlPavilion.value;
+			}
+			if(document.frmMain.ctlTexturing_ddlHall)
+			{
+				HallId=document.frmMain.ctlTexturing_ddlHall.value;	
+			}
+			if(document.frmMain.ctlTexturing_ddlSubExpo)
+			{
+				SubExpoID = document.frmMain.ctlTexturing_ddlSubExpo.value;	
+			}
+			if(document.frmMain.ctlTexturing_ddlMoveIn)
+			{
+				MoveInId = document.frmMain.ctlTexturing_ddlMoveIn.value;
+			}
+			if(document.frmMain.ctlTexturing_ddlMoveIn)
+			{
+				MoveOutId = document.frmMain.ctlTexturing_ddlMoveOut.value;
+			}
+			
+			QueryString = "?EventId="+ EventId +"&MapId="+ MapId + "&PavilionID=" + PavilionId + "&HallID=" + HallId + "&SubExpo=" + SubExpoID + "&MoveInID=" + MoveInId + "&MoveOutID=" + MoveOutId ;
+			
+			if(document.frmMain.ctlTexturing_ddlCategory)
+			{
+				ProdCatId=document.frmMain.ctlTexturing_ddlCategory.options[document.frmMain.ctlTexturing_ddlCategory.selectedIndex].value;
+				strSubProdCatText = ProdCatId.substr(0, 1);			
+				if (strSubProdCatText=="S")
+				{
+					SubCatId = ProdCatId.substr(1, ProdCatId.length-1);
+					QueryString=QueryString + "&SubCatId=" + SubCatId;
+					//loadXML(XMLFileName+"?MapID="+document.frmMain.hdnMapId.value+"&SubProdCatID="+strSubProdCatID+"&Task=SubProdCategory");		
+				}
+				else
+				{
+					QueryString=QueryString + "&CatId=" + ProdCatId;
+				}
+			}
+			
+			if(document.frmMain.ctlTexturing_ddlBoothStatus)
+			{
+				if (document.frmMain.ctlTexturing_ddlBoothStatus.value != "Select")
+				{
+					BoothStatus=document.frmMain.ctlTexturing_ddlBoothStatus.value;
+					QueryString=QueryString + "&BoothStatus=" + BoothStatus;
+				}
+			}
+			
+			/*
+			if (document.frmMain.ddlSubCategory.value > 0)
+			{
+				SubCatId=document.frmMain.ddlSubCategory.value;
+				QueryString=QueryString + "&SubCatId=" + SubCatId;
+			}
+			else if (document.frmMain.ddlCategory.value > 0)
+			{
+				CatId=document.frmMain.ddlCategory.value;
+				QueryString=QueryString + "&CatId=" + CatId;
+			}
+			*/
+			if (document.frmMain.ctlTexturing_txtWidth)
+			{
+			    if (document.frmMain.ctlTexturing_txtWidth.value != "")
+			    {
+    				
+				    Width=document.frmMain.ctlTexturing_txtWidth.value;
+				    if('Inches' != 'Inches')
+				    {
+					    Width = convertToInches(Width)/12;
+				    }
+				    QueryString=QueryString + "&Width=" + Width;
+			    }
+			}
+			if (document.frmMain.ctlTexturing_txtHeight)
+			{
+			    if (document.frmMain.ctlTexturing_txtHeight.value != "")
+			    {
+				    Height=document.frmMain.ctlTexturing_txtHeight.value;
+				    if('Inches' != 'Inches')
+				    {
+					    Height = convertToInches(Height)/12;
+				    }
+				    QueryString=QueryString + "&Height=" + Height;
+			    }
+			}
+			if (document.frmMain.ctlTexturing_txtArea)
+			{
+			    if (document.frmMain.ctlTexturing_txtArea.value != "")
+			    {
+				    Area=document.frmMain.ctlTexturing_txtArea.value;
+				    CompOperator= document.frmMain.ctlTexturing_ddlCompOperator.value;	
+				    if('Inches' != 'Inches')
+				    {
+					    Area = convertToSqInches(Area)/144;
+				    }
+				    QueryString=QueryString + "&Area=" + Area + "&CompOperator=" + CompOperator;
+			    }	
+			}
+			//alert(BoothStatus + PavilionId + 	ProdCatId + SubCatId + 	HallId + SubExpoID + Width + Height + Area )
+			if(!(PavilionId > 0 || ProdCatId > 0 || SubCatId > 0 || HallId > 0 || SubExpoID > 0 || MoveInId > 0 || MoveOutId
+				|| Width > 0 || Height > 0 || Area  > 0 || BoothStatus > -1) )
+			{
+				alert("Please select search crieteria");
+			}
+			else
+			{
+				//alert(QueryString);
+				strTask = "Highlight";
+				initTraverse(XMLFileName + QueryString);
+				
+				
+			}		
+		}
+		
+		function GeneratePdf()
+		{
+		var strArrHighlightedBooths = arrHighlightedBooths.join(", ");
+		var QString="?EventId="+ EventId +"&MapId="+ MapId;
+		if(document.getElementById("chkNoFill"))
+		{
+			if(document.getElementById("chkNoFill").checked==true)
+			{
+				QString = QString + "&NoFill=False";
+			}
+			else
+			{
+				QString = QString + "&NoFill=True";
+			}
+		}
+		else
+		{
+			QString = QString + "&NoFill=True";
+		}
+		
+		//var BoothIdString = escape(strArrHighlightedBooths)
+		//alert(strArrHighlightedBooths);
+		//window.navigate("g_GeneratePDF.aspx?BoothIds=" + BoothIdString);
+		document.frmMain.hdnBoothIds.value = strArrHighlightedBooths;
+		// = strArrHighlightedBooths;
+		//window.navigate("g_GeneratePDF.aspx");
+		///Changed by Bhavana to fix a2zSM #1539
+		document.frmMain.target = "_blank"
+		document.frmMain.action = "GeneratePDF.aspx" + QString ;
+		document.frmMain.__VIEWSTATE.name = 'NOVIEWSTATE';
+
+		}
+</SCRIPT>
+
+                  <TABLE id=ctlTexturing_TableOuter style="bgColor: #ffffff" 
+                  borderColor=gray cellSpacing=0 borderColorDark=white 
+                  cellPadding=0 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <TABLE id=TableInner style="Z-INDEX: 100" cellSpacing=0 
+                        cellPadding=0 width=450 border=0>
+                          <TBODY>
+                          <TR id=ctlTexturing_trCategory>
+                            <TD></TD>
+                            <TD colSpan=3><BR><BR>&nbsp;</TD></TR>
+                          </TBODY></TABLE></TD></TR></TBODY></TABLE></SPAN>
+                  <DIV id=overDiv 
+                  style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 12px; Z-INDEX: 9; BORDER-LEFT: black 1px solid; COLOR: white; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: verdana; POSITION: absolute; BACKGROUND-COLOR: #cc0000"></DIV>
+                  <SCRIPT>overDiv.style.display = "none"</SCRIPT>
+
+                  <DIV id=BoothLbl></DIV><MAP id=map11 name=map11></MAP>
+                  <DIV id=BasefloorPlan 
+                  style="Z-INDEX: 1; LEFT: 20px; POSITION: absolute; TOP: 250px"><IMG 
+                  id=imgFloorPlan height=886 isMap onerror=imgerr(); 
+                  src="floorPlan_files/g_imgfloorplan.gif" width=2128 
+                  useMap=#map11 border=0> </DIV><SPAN id=FloorPlan><SPAN 
+                  id=BoothID104582 
+                  onmouseover="popup(event,'','Booth:1<br>Size:10X10<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 441px; POSITION: absolute; TOP: -546px" 
+                  onmouseout=resolve();><IMG id=img104582 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103846 
+                  onmouseover="popup(event,'','Booth:1010<br>Size:50X30<BR> NXP Semiconductor');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1179px; CURSOR: pointer; POSITION: absolute; TOP: 708px" 
+                  onmouseout=resolve();><IMG id=img103846 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=100></SPAN><SPAN id=BoothID106186 
+                  onmouseover="popup(event,'','Booth:1018<br>Size:20X20<BR> Emerson Network Power');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1179px; CURSOR: pointer; POSITION: absolute; TOP: 648px" 
+                  onmouseout=resolve();><IMG id=img106186 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID106188 
+                  onmouseover="popup(event,'','Booth:1022<br>Size:10X10<BR> Touch Revolution');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1179px; CURSOR: pointer; POSITION: absolute; TOP: 628px" 
+                  onmouseout=resolve();><IMG id=img106188 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID106189 
+                  onmouseover="popup(event,'','Booth:1024<br>Size:10X10<BR> SafeNet, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1179px; CURSOR: pointer; POSITION: absolute; TOP: 608px" 
+                  onmouseout=resolve();><IMG id=img106189 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103865 
+                  onmouseover="popup(event,'','Booth:1028<br>Size:30X40<BR> Kontron');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1179px; CURSOR: pointer; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img103865 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=80 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=60></SPAN><SPAN id=BoothID103858 
+                  onmouseover="popup(event,'','Booth:1044<br>Size:20X20<BR> Altera');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1179px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img103858 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID106192 
+                  onmouseover="popup(event,'','Booth:1121<br>Size:10X10<BR> Arasan Chip');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1199px; CURSOR: pointer; POSITION: absolute; TOP: 628px" 
+                  onmouseout=resolve();><IMG id=img106192 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID106193 
+                  onmouseover="popup(event,'','Booth:1123<br>Size:10X10<BR> Sealevel Systems, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1199px; CURSOR: pointer; POSITION: absolute; TOP: 608px" 
+                  onmouseout=resolve();><IMG id=img106193 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103859 
+                  onmouseover="popup(event,'','Booth:1136<br>Size:20X30<BR> WIZnet');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1249px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img103859 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID105072 
+                  onmouseover="popup(event,'','Booth:1146<br>Size:10X10<BR> Ubicom');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1249px; CURSOR: pointer; POSITION: absolute; TOP: 388px" 
+                  onmouseout=resolve();><IMG id=img105072 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105038 
+                  onmouseover="popup(event,'','Booth:116<br>Size:10X10<BR> DINI Group');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 629px; CURSOR: pointer; POSITION: absolute; TOP: 688px" 
+                  onmouseout=resolve();><IMG id=img105038 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105039 
+                  onmouseover="popup(event,'','Booth:118<br>Size:10X10<BR> IEEE Xplore Digital Library ');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 629px; CURSOR: pointer; POSITION: absolute; TOP: 668px" 
+                  onmouseout=resolve();><IMG id=img105039 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103811 
+                  onmouseover="popup(event,'','Booth:119<br>Size:10X10<BR> Allegro Software Development Corp.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 579px; CURSOR: pointer; POSITION: absolute; TOP: 666px" 
+                  onmouseout=resolve();><IMG id=img103811 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105040 
+                  onmouseover="popup(event,'','Booth:120<br>Size:10X10<BR> Geist Technologies');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 629px; CURSOR: pointer; POSITION: absolute; TOP: 648px" 
+                  onmouseout=resolve();><IMG id=img105040 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103812 
+                  onmouseover="popup(event,'','Booth:121<br>Size:10X20<BR> RFM');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 579px; CURSOR: pointer; POSITION: absolute; TOP: 626px" 
+                  onmouseout=resolve();><IMG id=img103812 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103872 
+                  onmouseover="popup(event,'','Booth:1210<br>Size:30X30<BR> Freescale Semiconductor');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1299px; CURSOR: pointer; POSITION: absolute; TOP: 708px" 
+                  onmouseout=resolve();><IMG id=img103872 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=60></SPAN><SPAN id=BoothID103868 
+                  onmouseover="popup(event,'','Booth:1218<br>Size:20X30<BR> IBM Software');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1259px; CURSOR: pointer; POSITION: absolute; TOP: 628px" 
+                  onmouseout=resolve();><IMG id=img103868 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID105041 
+                  onmouseover="popup(event,'','Booth:122<br>Size:10X10<BR> Varta Microbattery, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 629px; CURSOR: pointer; POSITION: absolute; TOP: 628px" 
+                  onmouseout=resolve();><IMG id=img105041 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103843 
+                  onmouseover="popup(event,'','Booth:1223<br>Size:30X20<BR> congatec');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1259px; CURSOR: pointer; POSITION: absolute; TOP: 568px" 
+                  onmouseout=resolve();><IMG id=img103843 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=60></SPAN><SPAN id=BoothID103844 
+                  onmouseover="popup(event,'','Booth:1229<br>Size:30X20<BR> LynuxWorks');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1259px; CURSOR: pointer; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img103844 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=60></SPAN><SPAN id=BoothID103860 
+                  onmouseover="popup(event,'','Booth:1236<br>Size:20X30<BR> ADLINK Technology, Inc., Ampro Computers, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1309px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img103860 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID105073 
+                  onmouseover="popup(event,'','Booth:1243<br>Size:10X20<BR> Quanmax');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1269px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img105073 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105077 
+                  onmouseover="popup(event,'','Booth:1244<br>Size:10X10<BR> Netrino, LLC');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1309px; CURSOR: pointer; POSITION: absolute; TOP: 388px" 
+                  onmouseout=resolve();><IMG id=img105077 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105078 
+                  onmouseover="popup(event,'','Booth:1246<br>Size:10X10<BR> Stackable USB');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1309px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img105078 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105043 
+                  onmouseover="popup(event,'','Booth:126<br>Size:10X10<BR> Meritronics');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 629px; CURSOR: pointer; POSITION: absolute; TOP: 588px" 
+                  onmouseout=resolve();><IMG id=img105043 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105044 
+                  onmouseover="popup(event,'','Booth:128<br>Size:10X10<BR> austriamicrosystems USA, Ltd.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 629px; CURSOR: pointer; POSITION: absolute; TOP: 568px" 
+                  onmouseout=resolve();><IMG id=img105044 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103815 
+                  onmouseover="popup(event,'','Booth:129<br>Size:10X20<BR> HI-TECH Software LLC');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 579px; CURSOR: pointer; POSITION: absolute; TOP: 532px" 
+                  onmouseout=resolve();><IMG id=img103815 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105045 
+                  onmouseover="popup(event,'','Booth:130<br>Size:10X10<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 629px; POSITION: absolute; TOP: 548px" 
+                  onmouseout=resolve();><IMG id=img105045 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105081 
+                  onmouseover="popup(event,'','Booth:1318<br>Size:20X30<BR> AMD');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1319px; CURSOR: pointer; POSITION: absolute; TOP: 628px" 
+                  onmouseout=resolve();><IMG id=img105081 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID105046 
+                  onmouseover="popup(event,'','Booth:132<br>Size:10X10<BR> Premio');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 629px; CURSOR: pointer; POSITION: absolute; TOP: 528px" 
+                  onmouseout=resolve();><IMG id=img105046 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104991 
+                  onmouseover="popup(event,'','Booth:1326<br>Size:20X20<BR> Nokia, Qt Software');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1339px; CURSOR: pointer; POSITION: absolute; TOP: 568px" 
+                  onmouseout=resolve();><IMG id=img104991 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID104914 
+                  onmouseover="popup(event,'','Booth:1332<br>Size:20X20<BR> Total Phase, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1339px; CURSOR: pointer; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img104914 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103861 
+                  onmouseover="popup(event,'','Booth:1336<br>Size:20X30<BR> IAR Systems');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1379px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img103861 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID105047 
+                  onmouseover="popup(event,'','Booth:134<br>Size:10X10<BR> ConnectBlue');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 629px; CURSOR: pointer; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img105047 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103816 
+                  onmouseover="popup(event,'','Booth:135<br>Size:10X10<BR> WDL Systems');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 579px; CURSOR: pointer; POSITION: absolute; TOP: 512px" 
+                  onmouseout=resolve();><IMG id=img103816 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103876 
+                  onmouseover="popup(event,'','Booth:1404<br>Size:20X30<BR> AMCC');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1449px; CURSOR: pointer; POSITION: absolute; TOP: 768px" 
+                  onmouseout=resolve();><IMG id=img103876 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103873 
+                  onmouseover="popup(event,'','Booth:1409<br>Size:20X30<BR> Mentor Graphics');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1379px; CURSOR: pointer; POSITION: absolute; TOP: 708px" 
+                  onmouseout=resolve();><IMG id=img103873 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103817 
+                  onmouseover="popup(event,'','Booth:141<br>Size:10X20<BR> EBSnet, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 579px; CURSOR: pointer; POSITION: absolute; TOP: 411px" 
+                  onmouseout=resolve();><IMG id=img103817 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103874 
+                  onmouseover="popup(event,'','Booth:1412<br>Size:20X30<BR> STMicroelectronics');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1449px; CURSOR: pointer; POSITION: absolute; TOP: 688px" 
+                  onmouseout=resolve();><IMG id=img103874 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103869 
+                  onmouseover="popup(event,'','Booth:1418<br>Size:20X30<BR> National Instruments');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1379px; CURSOR: pointer; POSITION: absolute; TOP: 628px" 
+                  onmouseout=resolve();><IMG id=img103869 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID104155 
+                  onmouseover="popup(event,'','Booth:142<br>Size:20X20<BR> pls Development Tools, TQ Components');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 629px; CURSOR: pointer; POSITION: absolute; TOP: 388px" 
+                  onmouseout=resolve();><IMG id=img104155 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103870 
+                  onmouseover="popup(event,'','Booth:1420<br>Size:20X30<BR> XILINX, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1449px; CURSOR: pointer; POSITION: absolute; TOP: 608px" 
+                  onmouseout=resolve();><IMG id=img103870 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID104977 
+                  onmouseover="popup(event,'','Booth:1425<br>Size:20X20<BR> Nordic Semiconductor');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1379px; CURSOR: pointer; POSITION: absolute; TOP: 568px" 
+                  onmouseout=resolve();><IMG id=img104977 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103825 
+                  onmouseover="popup(event,'','Booth:1428<br>Size:20X20<BR> Logic Product Development');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1449px; CURSOR: pointer; POSITION: absolute; TOP: 548px" 
+                  onmouseout=resolve();><IMG id=img103825 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID104907 
+                  onmouseover="popup(event,'','Booth:1431<br>Size:20X20<BR> Synapse');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1379px; CURSOR: pointer; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img104907 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID104999 
+                  onmouseover="popup(event,'','Booth:1436<br>Size:10X20<BR> RTD Embedded Technologies, Inc');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1449px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img104999 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105001 
+                  onmouseover="popup(event,'','Booth:1440<br>Size:10X10<BR> Intrepid Control Systems, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1449px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img105001 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104124 
+                  onmouseover="popup(event,'','Booth:145<br>Size:10X10<BR> Ironwood Electronics');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 579px; CURSOR: pointer; POSITION: absolute; TOP: 391px" 
+                  onmouseout=resolve();><IMG id=img104124 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103877 
+                  onmouseover="popup(event,'','Booth:1502<br>Size:20X30<BR> ARM');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1509px; CURSOR: pointer; POSITION: absolute; TOP: 788px" 
+                  onmouseout=resolve();><IMG id=img103877 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103875 
+                  onmouseover="popup(event,'','Booth:1510<br>Size:20X30<BR> VIA Technologies, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1509px; CURSOR: pointer; POSITION: absolute; TOP: 708px" 
+                  onmouseout=resolve();><IMG id=img103875 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103871 
+                  onmouseover="popup(event,'','Booth:1518<br>Size:20X30<BR> Digi International');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1509px; CURSOR: pointer; POSITION: absolute; TOP: 628px" 
+                  onmouseout=resolve();><IMG id=img103871 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103823 
+                  onmouseover="popup(event,'','Booth:1532<br>Size:20X20<BR> Lauterbach, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1509px; CURSOR: pointer; POSITION: absolute; TOP: 548px" 
+                  onmouseout=resolve();><IMG id=img103823 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID105002 
+                  onmouseover="popup(event,'','Booth:1535<br>Size:10X20<BR> DSP Valley/Coolflux DSP and IMEC');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1469px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img105002 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104700 
+                  onmouseover="popup(event,'','Booth:1536<br>Size:10X20<BR> Target Compiler');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1509px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img104700 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105004 
+                  onmouseover="popup(event,'','Booth:1539<br>Size:10X10<BR> AAEON ');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1469px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img105004 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104702 
+                  onmouseover="popup(event,'','Booth:1540<br>Size:10X10<BR> Jungo Software Technologies');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1509px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img104702 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104973 
+                  onmouseover="popup(event,'','Booth:1544<br>Size:10X10<BR> Black Duck Software, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1509px; CURSOR: pointer; POSITION: absolute; TOP: 388px" 
+                  onmouseout=resolve();><IMG id=img104973 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104974 
+                  onmouseover="popup(event,'','Booth:1546<br>Size:10X10<BR> PLDA');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1509px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img104974 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103822 
+                  onmouseover="popup(event,'','Booth:1602<br>Size:20X20<BR> VersaLogic');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1569px; CURSOR: pointer; POSITION: absolute; TOP: 808px" 
+                  onmouseout=resolve();><IMG id=img103822 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID105075 
+                  onmouseover="popup(event,'','Booth:1606<br>Size:10X10<BR> Critical Blue');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1569px; CURSOR: pointer; POSITION: absolute; TOP: 788px" 
+                  onmouseout=resolve();><IMG id=img105075 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105076 
+                  onmouseover="popup(event,'','Booth:1608<br>Size:10X10<BR> Redpine Signals');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1569px; CURSOR: pointer; POSITION: absolute; TOP: 768px" 
+                  onmouseout=resolve();><IMG id=img105076 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103731 
+                  onmouseover="popup(event,'','Booth:1610<br>Size:10X20<BR> Aonix');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1569px; CURSOR: pointer; POSITION: absolute; TOP: 728px" 
+                  onmouseout=resolve();><IMG id=img103731 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105094 
+                  onmouseover="popup(event,'','Booth:1616<br>Size:10X10<BR> CMX Systems, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1569px; CURSOR: pointer; POSITION: absolute; TOP: 708px" 
+                  onmouseout=resolve();><IMG id=img105094 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104139 
+                  onmouseover="popup(event,'','Booth:1620<br>Size:20X20<BR> Epson');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1569px; CURSOR: pointer; POSITION: absolute; TOP: 628px" 
+                  onmouseout=resolve();><IMG id=img104139 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103735 
+                  onmouseover="popup(event,'','Booth:1626<br>Size:20X20<BR> Synopsys, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1569px; CURSOR: pointer; POSITION: absolute; TOP: 568px" 
+                  onmouseout=resolve();><IMG id=img103735 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103736 
+                  onmouseover="popup(event,'','Booth:1630<br>Size:10X20<BR> Performance Technologies');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1569px; CURSOR: pointer; POSITION: absolute; TOP: 528px" 
+                  onmouseout=resolve();><IMG id=img103736 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103737 
+                  onmouseover="popup(event,'','Booth:1634<br>Size:10X10');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1569px; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img103737 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104703 
+                  onmouseover="popup(event,'','Booth:1635<br>Size:10X20<BR> Anovo Co, Ltd.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1529px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img104703 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103694 
+                  onmouseover="popup(event,'','Booth:1636<br>Size:10X10<BR> Signum Systems');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1569px; CURSOR: pointer; POSITION: absolute; TOP: 468px" 
+                  onmouseout=resolve();><IMG id=img103694 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103695 
+                  onmouseover="popup(event,'','Booth:1638<br>Size:10X20<BR> Klockwork');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1569px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img103695 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104705 
+                  onmouseover="popup(event,'','Booth:1639<br>Size:10X10<BR> EMAC');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1529px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img104705 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103697 
+                  onmouseover="popup(event,'','Booth:1642<br>Size:10X10<BR> Diamond Systems Corporation');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1569px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img103697 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104975 
+                  onmouseover="popup(event,'','Booth:1643<br>Size:10X10<BR> Infinite Power Solutions');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1529px; CURSOR: pointer; POSITION: absolute; TOP: 388px" 
+                  onmouseout=resolve();><IMG id=img104975 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103698 
+                  onmouseover="popup(event,'','Booth:1644<br>Size:10X20<BR> Innodisk Corporation');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1569px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img103698 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104976 
+                  onmouseover="popup(event,'','Booth:1645<br>Size:10X10<BR> Reach Technology, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1529px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img104976 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104462 
+                  onmouseover="popup(event,'','Booth:1702<br>Size:20X20<BR> American Arium');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1629px; CURSOR: pointer; POSITION: absolute; TOP: 808px" 
+                  onmouseout=resolve();><IMG id=img104462 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103738 
+                  onmouseover="popup(event,'','Booth:1705<br>Size:10X20<BR> Birdstep Technology Inc');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1589px; CURSOR: pointer; POSITION: absolute; TOP: 768px" 
+                  onmouseout=resolve();><IMG id=img103738 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105063 
+                  onmouseover="popup(event,'','Booth:1706<br>Size:10X10<BR> Hitex Development Tools');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1629px; CURSOR: pointer; POSITION: absolute; TOP: 788px" 
+                  onmouseout=resolve();><IMG id=img105063 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105064 
+                  onmouseover="popup(event,'','Booth:1708<br>Size:10X10<BR> SPDevices');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1629px; CURSOR: pointer; POSITION: absolute; TOP: 768px" 
+                  onmouseout=resolve();><IMG id=img105064 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103739 
+                  onmouseover="popup(event,'','Booth:1709<br>Size:10X20<BR> KUKA AG');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1589px; CURSOR: pointer; POSITION: absolute; TOP: 728px" 
+                  onmouseout=resolve();><IMG id=img103739 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105095 
+                  onmouseover="popup(event,'','Booth:1713<br>Size:10X10<BR> Numetrics');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1589px; CURSOR: pointer; POSITION: absolute; TOP: 708px" 
+                  onmouseout=resolve();><IMG id=img105095 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104696 
+                  onmouseover="popup(event,'','Booth:1714<br>Size:10X20<BR> Lantronix');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1629px; CURSOR: pointer; POSITION: absolute; TOP: 728px" 
+                  onmouseout=resolve();><IMG id=img104696 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104147 
+                  onmouseover="popup(event,'','Booth:1720<br>Size:20X20<BR> Moxa Technologies, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1629px; CURSOR: pointer; POSITION: absolute; TOP: 628px" 
+                  onmouseout=resolve();><IMG id=img104147 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID104217 
+                  onmouseover="popup(event,'','Booth:1726<br>Size:10X20<BR> Multi-Tech Systems, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1629px; CURSOR: pointer; POSITION: absolute; TOP: 568px" 
+                  onmouseout=resolve();><IMG id=img104217 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103744 
+                  onmouseover="popup(event,'','Booth:1729<br>Size:10X20<BR> Future Technology Devices International');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1589px; CURSOR: pointer; POSITION: absolute; TOP: 528px" 
+                  onmouseout=resolve();><IMG id=img103744 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104221 
+                  onmouseover="popup(event,'','Booth:1730<br>Size:10X10<BR> Radian Heatsinks');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1629px; CURSOR: pointer; POSITION: absolute; TOP: 548px" 
+                  onmouseout=resolve();><IMG id=img104221 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105097 
+                  onmouseover="popup(event,'','Booth:1732<br>Size:10X20<BR> IEEE Media');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1629px; CURSOR: pointer; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img105097 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103745 
+                  onmouseover="popup(event,'','Booth:1733<br>Size:10X10<BR> AXIOMTEK');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1589px; CURSOR: pointer; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img103745 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103700 
+                  onmouseover="popup(event,'','Booth:1735<br>Size:10X20<BR> LiPPERT Embedded Computers, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1589px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img103700 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103706 
+                  onmouseover="popup(event,'','Booth:1736<br>Size:20X20<BR> Advanced Digital Logic, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1629px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img103706 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103708 
+                  onmouseover="popup(event,'','Booth:1740<br>Size:10X20<BR> PQI Corporation');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1629px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img103708 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103704 
+                  onmouseover="popup(event,'','Booth:1743<br>Size:10X10<BR> Segger Microcontroller Systeme GmbH');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1589px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img103704 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103710 
+                  onmouseover="popup(event,'','Booth:1744<br>Size:10X10<BR> Purcell Technologies, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1629px; CURSOR: pointer; POSITION: absolute; TOP: 388px" 
+                  onmouseout=resolve();><IMG id=img103710 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103705 
+                  onmouseover="popup(event,'','Booth:1745<br>Size:10X10<BR> Emulation Technology, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1589px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img103705 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103711 
+                  onmouseover="popup(event,'','Booth:1746<br>Size:10X10<BR> iSystem');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1629px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img103711 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103820 
+                  onmouseover="popup(event,'','Booth:1802<br>Size:20X20<BR> Luminary Micro, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1689px; CURSOR: pointer; POSITION: absolute; TOP: 808px" 
+                  onmouseout=resolve();><IMG id=img103820 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103762 
+                  onmouseover="popup(event,'','Booth:1806<br>Size:10X20<BR> Elsevier');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1689px; CURSOR: pointer; POSITION: absolute; TOP: 768px" 
+                  onmouseout=resolve();><IMG id=img103762 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103755 
+                  onmouseover="popup(event,'','Booth:1809<br>Size:10X20<BR> Laird Technologies, Wireless Systems (formerly AeroComm)');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1649px; CURSOR: pointer; POSITION: absolute; TOP: 768px" 
+                  onmouseout=resolve();><IMG id=img103755 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103764 
+                  onmouseover="popup(event,'','Booth:1810<br>Size:10X20<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1689px; POSITION: absolute; TOP: 728px" 
+                  onmouseout=resolve();><IMG id=img103764 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104698 
+                  onmouseover="popup(event,'','Booth:1813<br>Size:10X20<BR> Pico Technology');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1649px; CURSOR: pointer; POSITION: absolute; TOP: 728px" 
+                  onmouseout=resolve();><IMG id=img104698 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103766 
+                  onmouseover="popup(event,'','Booth:1814<br>Size:10X20<BR> ACCES I/O Products, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1689px; CURSOR: pointer; POSITION: absolute; TOP: 688px" 
+                  onmouseout=resolve();><IMG id=img103766 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103769 
+                  onmouseover="popup(event,'','Booth:1820<br>Size:10X20<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1689px; POSITION: absolute; TOP: 628px" 
+                  onmouseout=resolve();><IMG id=img103769 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103771 
+                  onmouseover="popup(event,'','Booth:1824<br>Size:10X20<BR> LDRA Technology, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1689px; CURSOR: pointer; POSITION: absolute; TOP: 588px" 
+                  onmouseout=resolve();><IMG id=img103771 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104219 
+                  onmouseover="popup(event,'','Booth:1825<br>Size:10X20<BR> Hyperstone, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1649px; CURSOR: pointer; POSITION: absolute; TOP: 568px" 
+                  onmouseout=resolve();><IMG id=img104219 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104222 
+                  onmouseover="popup(event,'','Booth:1829<br>Size:10X10<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1649px; POSITION: absolute; TOP: 548px" 
+                  onmouseout=resolve();><IMG id=img104222 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105099 
+                  onmouseover="popup(event,'','Booth:1831<br>Size:10X20<BR> BDTI');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1649px; CURSOR: pointer; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img105099 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104158 
+                  onmouseover="popup(event,'','Booth:1832<br>Size:10X20<BR> Okaya Electric');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1689px; CURSOR: pointer; POSITION: absolute; TOP: 548px" 
+                  onmouseout=resolve();><IMG id=img104158 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103718 
+                  onmouseover="popup(event,'','Booth:1836<br>Size:20X20<BR> The Semiconductor Store/Symmetry Electronics');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1689px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img103718 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103714 
+                  onmouseover="popup(event,'','Booth:1839<br>Size:10X20<BR> MeshNetics');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1649px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img103714 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103720 
+                  onmouseover="popup(event,'','Booth:1840<br>Size:10X10<BR> Macraigor Systems');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1689px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img103720 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103717 
+                  onmouseover="popup(event,'','Booth:1843<br>Size:10X20<BR> Powertip');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1649px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img103717 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103722 
+                  onmouseover="popup(event,'','Booth:1844<br>Size:10X20<BR> Micrium');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1689px; CURSOR: pointer; POSITION: absolute; TOP: 388px" 
+                  onmouseout=resolve();><IMG id=img103722 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103792 
+                  onmouseover="popup(event,'','Booth:1902<br>Size:10X10<BR> Datalight, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 828px" 
+                  onmouseout=resolve();><IMG id=img103792 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103793 
+                  onmouseover="popup(event,'','Booth:1904<br>Size:10X10<BR> Earth LCD');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 808px" 
+                  onmouseout=resolve();><IMG id=img103793 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103777 
+                  onmouseover="popup(event,'','Booth:1905<br>Size:10X20<BR> Ramtron International Corp.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1709px; CURSOR: pointer; POSITION: absolute; TOP: 768px" 
+                  onmouseout=resolve();><IMG id=img103777 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103794 
+                  onmouseover="popup(event,'','Booth:1906<br>Size:10X10<BR> MapuSoft Technologies');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 788px" 
+                  onmouseout=resolve();><IMG id=img103794 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103795 
+                  onmouseover="popup(event,'','Booth:1908<br>Size:10X10<BR> Silicon Image');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 768px" 
+                  onmouseout=resolve();><IMG id=img103795 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103779 
+                  onmouseover="popup(event,'','Booth:1909<br>Size:10X10<BR> NCI Logic Analyzers');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1709px; CURSOR: pointer; POSITION: absolute; TOP: 748px" 
+                  onmouseout=resolve();><IMG id=img103779 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103796 
+                  onmouseover="popup(event,'','Booth:1910<br>Size:10X10<BR> Acromag');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 748px" 
+                  onmouseout=resolve();><IMG id=img103796 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103780 
+                  onmouseover="popup(event,'','Booth:1911<br>Size:10X10<BR> Kent Displays, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1709px; CURSOR: pointer; POSITION: absolute; TOP: 728px" 
+                  onmouseout=resolve();><IMG id=img103780 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103797 
+                  onmouseover="popup(event,'','Booth:1912<br>Size:10X10<BR> Indesign, LLC');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 728px" 
+                  onmouseout=resolve();><IMG id=img103797 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103781 
+                  onmouseover="popup(event,'','Booth:1913<br>Size:10X20<BR> Connect Tech, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1709px; CURSOR: pointer; POSITION: absolute; TOP: 688px" 
+                  onmouseout=resolve();><IMG id=img103781 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103798 
+                  onmouseover="popup(event,'','Booth:1916<br>Size:10X20<BR> Tri-M Systems and Engineering');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 660px" 
+                  onmouseout=resolve();><IMG id=img103798 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103784 
+                  onmouseover="popup(event,'','Booth:1919<br>Size:10X20<BR> Amulet Technologies');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1709px; CURSOR: pointer; POSITION: absolute; TOP: 628px" 
+                  onmouseout=resolve();><IMG id=img103784 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103800 
+                  onmouseover="popup(event,'','Booth:1920<br>Size:10X10<BR> Protech Systems Co., Ltd.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 640px" 
+                  onmouseout=resolve();><IMG id=img103800 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103801 
+                  onmouseover="popup(event,'','Booth:1922<br>Size:10X10<BR> Synertron Technology, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 620px" 
+                  onmouseout=resolve();><IMG id=img103801 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103802 
+                  onmouseover="popup(event,'','Booth:1924<br>Size:10X10<BR> IBASE Technology');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 574px" 
+                  onmouseout=resolve();><IMG id=img103802 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103787 
+                  onmouseover="popup(event,'','Booth:1925<br>Size:10X10<BR> Avalue Technology Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1709px; CURSOR: pointer; POSITION: absolute; TOP: 608px" 
+                  onmouseout=resolve();><IMG id=img103787 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103803 
+                  onmouseover="popup(event,'','Booth:1926<br>Size:10X10<BR> Mouser Electronics');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 554px" 
+                  onmouseout=resolve();><IMG id=img103803 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103788 
+                  onmouseover="popup(event,'','Booth:1927<br>Size:10X10<BR> Pico Computing');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1709px; CURSOR: pointer; POSITION: absolute; TOP: 588px" 
+                  onmouseout=resolve();><IMG id=img103788 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103804 
+                  onmouseover="popup(event,'','Booth:1928<br>Size:10X10<BR> Hagiwara Sys-Com US. Co. Ltd.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 534px" 
+                  onmouseout=resolve();><IMG id=img103804 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103789 
+                  onmouseover="popup(event,'','Booth:1929<br>Size:10X10<BR> Dell OEM');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1709px; CURSOR: pointer; POSITION: absolute; TOP: 568px" 
+                  onmouseout=resolve();><IMG id=img103789 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103805 
+                  onmouseover="popup(event,'','Booth:1930<br>Size:10X20<BR> Memphis Electronic AG');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 494px" 
+                  onmouseout=resolve();><IMG id=img103805 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104160 
+                  onmouseover="popup(event,'','Booth:1931<br>Size:10X20<BR> Qualisystems');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1709px; CURSOR: pointer; POSITION: absolute; TOP: 528px" 
+                  onmouseout=resolve();><IMG id=img104160 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103726 
+                  onmouseover="popup(event,'','Booth:1939<br>Size:10X10<BR> Senbo Embedded Computer Company, Ltd.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1709px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img103726 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105011 
+                  onmouseover="popup(event,'','Booth:1940<br>Size:10X10<BR> ITOX, Applied Computing');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 433px" 
+                  onmouseout=resolve();><IMG id=img105011 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105012 
+                  onmouseover="popup(event,'','Booth:1942<br>Size:10X10<BR> DFI Technologies');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1759px; CURSOR: pointer; POSITION: absolute; TOP: 413px" 
+                  onmouseout=resolve();><IMG id=img105012 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103729 
+                  onmouseover="popup(event,'','Booth:1945<br>Size:10X10<BR> LXD Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1709px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img103729 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104430 
+                  onmouseover="popup(event,'','Booth:2121<br>Size:10X10<BR> Cogent Computer Systems');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 644px; CURSOR: pointer; POSITION: absolute; TOP: 842px" 
+                  onmouseout=resolve();><IMG id=img104430 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104431 
+                  onmouseover="popup(event,'','Booth:2122<br>Size:10X10<BR> aicas incorporated');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 664px; CURSOR: pointer; POSITION: absolute; TOP: 842px" 
+                  onmouseout=resolve();><IMG id=img104431 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104432 
+                  onmouseover="popup(event,'','Booth:2123<br>Size:10X10<BR> Sophia Systems');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 684px; CURSOR: pointer; POSITION: absolute; TOP: 842px" 
+                  onmouseout=resolve();><IMG id=img104432 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104433 
+                  onmouseover="popup(event,'','Booth:2124<br>Size:10X10<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 704px; POSITION: absolute; TOP: 842px" 
+                  onmouseout=resolve();><IMG id=img104433 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104434 
+                  onmouseover="popup(event,'','Booth:2125<br>Size:10X10<BR> AdaCore');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 724px; CURSOR: pointer; POSITION: absolute; TOP: 842px" 
+                  onmouseout=resolve();><IMG id=img104434 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104435 
+                  onmouseover="popup(event,'','Booth:2126<br>Size:10X10<BR> Element CXI');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 744px; CURSOR: pointer; POSITION: absolute; TOP: 842px" 
+                  onmouseout=resolve();><IMG id=img104435 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104436 
+                  onmouseover="popup(event,'','Booth:2127<br>Size:10X10<BR> Micromint USA');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 764px; CURSOR: pointer; POSITION: absolute; TOP: 842px" 
+                  onmouseout=resolve();><IMG id=img104436 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104437 
+                  onmouseover="popup(event,'','Booth:2128<br>Size:10X10<BR> DMP Electronics');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 784px; CURSOR: pointer; POSITION: absolute; TOP: 842px" 
+                  onmouseout=resolve();><IMG id=img104437 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104438 
+                  onmouseover="popup(event,'','Booth:2129<br>Size:20X10<BR> Reed Business Information');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 804px; CURSOR: pointer; POSITION: absolute; TOP: 842px" 
+                  onmouseout=resolve();><IMG id=img104438 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID104440 
+                  onmouseover="popup(event,'','Booth:2131<br>Size:10X10<BR> Samplify Systems, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 844px; CURSOR: pointer; POSITION: absolute; TOP: 842px" 
+                  onmouseout=resolve();><IMG id=img104440 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104441 
+                  onmouseover="popup(event,'','Booth:2132<br>Size:10X10<BR> Cosmic Software, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 864px; CURSOR: pointer; POSITION: absolute; TOP: 842px" 
+                  onmouseout=resolve();><IMG id=img104441 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105049 
+                  onmouseover="popup(event,'','Booth:215<br>Size:10X10<BR> Comit Systems, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 649px; CURSOR: pointer; POSITION: absolute; TOP: 688px" 
+                  onmouseout=resolve();><IMG id=img105049 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105050 
+                  onmouseover="popup(event,'','Booth:217<br>Size:10X10<BR> California Software Labs');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 649px; CURSOR: pointer; POSITION: absolute; TOP: 668px" 
+                  onmouseout=resolve();><IMG id=img105050 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105051 
+                  onmouseover="popup(event,'','Booth:219<br>Size:10X10<BR> Seiko Instruments');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 649px; CURSOR: pointer; POSITION: absolute; TOP: 648px" 
+                  onmouseout=resolve();><IMG id=img105051 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104442 
+                  onmouseover="popup(event,'','Booth:2201<br>Size:10X10<BR> Micro Digital, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 883px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104442 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104443 
+                  onmouseover="popup(event,'','Booth:2203<br>Size:10X10<BR> Noren Products');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 903px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104443 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104444 
+                  onmouseover="popup(event,'','Booth:2205<br>Size:10X10<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 923px; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104444 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104445 
+                  onmouseover="popup(event,'','Booth:2207<br>Size:10X10<BR> BiTMICRO Networks, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 943px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104445 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104396 
+                  onmouseover="popup(event,'','Booth:2209<br>Size:10X10<BR> PFU Systems');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 983px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104396 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105052 
+                  onmouseover="popup(event,'','Booth:221<br>Size:10X10<BR> eCosCentric');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 649px; CURSOR: pointer; POSITION: absolute; TOP: 628px" 
+                  onmouseout=resolve();><IMG id=img105052 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104397 
+                  onmouseover="popup(event,'','Booth:2211<br>Size:10X10<BR> IEEE SCV');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1003px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104397 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104416 
+                  onmouseover="popup(event,'','Booth:2212<br>Size:10X10<BR> A2E Technologies');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1009px; CURSOR: pointer; POSITION: absolute; TOP: 856px" 
+                  onmouseout=resolve();><IMG id=img104416 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104398 
+                  onmouseover="popup(event,'','Booth:2213<br>Size:10X10<BR> RTC Group');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1023px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104398 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104417 
+                  onmouseover="popup(event,'','Booth:2214<br>Size:10X10<BR> SureSoft Technologies, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1029px; CURSOR: pointer; POSITION: absolute; TOP: 856px" 
+                  onmouseout=resolve();><IMG id=img104417 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104399 
+                  onmouseover="popup(event,'','Booth:2215<br>Size:10X10<BR> ABPI');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1043px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104399 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104400 
+                  onmouseover="popup(event,'','Booth:2217<br>Size:10X10<BR> Research');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1063px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104400 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104418 
+                  onmouseover="popup(event,'','Booth:2218<br>Size:10X10<BR> Penton - Electronic Design Group');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1069px; CURSOR: pointer; POSITION: absolute; TOP: 856px" 
+                  onmouseout=resolve();><IMG id=img104418 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104401 
+                  onmouseover="popup(event,'','Booth:2219<br>Size:10X10<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1083px; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104401 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104419 
+                  onmouseover="popup(event,'','Booth:2220<br>Size:10X10<BR> CompactFlash');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1089px; CURSOR: pointer; POSITION: absolute; TOP: 856px" 
+                  onmouseout=resolve();><IMG id=img104419 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104402 
+                  onmouseover="popup(event,'','Booth:2221<br>Size:10X10<BR> Circuit Cellar');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1103px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104402 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104403 
+                  onmouseover="popup(event,'','Booth:2223<br>Size:10X10<BR> Extension Media');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1123px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104403 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104404 
+                  onmouseover="popup(event,'','Booth:2225<br>Size:10X10<BR> Advantage Business Media');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1161px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104404 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104405 
+                  onmouseover="popup(event,'','Booth:2227<br>Size:10X10<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1181px; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104405 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104406 
+                  onmouseover="popup(event,'','Booth:2229<br>Size:10X10<BR> Open Systems Media');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1201px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104406 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104407 
+                  onmouseover="popup(event,'','Booth:2231<br>Size:10X10<BR> PennWell');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1221px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104407 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104408 
+                  onmouseover="popup(event,'','Booth:2233<br>Size:10X10<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1241px; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104408 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104409 
+                  onmouseover="popup(event,'','Booth:2235<br>Size:10X10<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1261px; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104409 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104410 
+                  onmouseover="popup(event,'','Booth:2237<br>Size:10X10<BR> PC/104 Consortium');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1281px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104410 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104411 
+                  onmouseover="popup(event,'','Booth:2239<br>Size:10X10<BR> Apacer Memory America');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1301px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104411 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104412 
+                  onmouseover="popup(event,'','Booth:2241<br>Size:10X10<BR> CodeSourcery');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1342px; CURSOR: pointer; POSITION: absolute; TOP: 912px" 
+                  onmouseout=resolve();><IMG id=img104412 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105054 
+                  onmouseover="popup(event,'','Booth:225<br>Size:10X10<BR> Perforce Software');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 649px; CURSOR: pointer; POSITION: absolute; TOP: 588px" 
+                  onmouseout=resolve();><IMG id=img105054 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105055 
+                  onmouseover="popup(event,'','Booth:227<br>Size:10X10<BR> Electric Cloud');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 649px; CURSOR: pointer; POSITION: absolute; TOP: 568px" 
+                  onmouseout=resolve();><IMG id=img105055 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105056 
+                  onmouseover="popup(event,'','Booth:229<br>Size:10X10<BR> Byte Paradigm');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 649px; CURSOR: pointer; POSITION: absolute; TOP: 548px" 
+                  onmouseout=resolve();><IMG id=img105056 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105057 
+                  onmouseover="popup(event,'','Booth:231<br>Size:10X10<BR> Elektor International Media BV');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 649px; CURSOR: pointer; POSITION: absolute; TOP: 528px" 
+                  onmouseout=resolve();><IMG id=img105057 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105058 
+                  onmouseover="popup(event,'','Booth:233<br>Size:10X10<BR> GrammaTech');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 649px; CURSOR: pointer; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img105058 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID106512 
+                  onmouseover="popup(event,'','Booth:234<br>Size:10X10');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 709px; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img106512 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105067 
+                  onmouseover="popup(event,'','Booth:235<br>Size:10X20<BR> Screaming Circuits');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 649px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img105067 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103682 
+                  onmouseover="popup(event,'','Booth:236<br>Size:10X20<BR> Virtium');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 689px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img103682 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103683 
+                  onmouseover="popup(event,'','Booth:240<br>Size:10X20<BR> RICOH Electronics, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 689px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img103683 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104239 
+                  onmouseover="popup(event,'','Booth:244<br>Size:10X20<BR> InHand Electronics, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 689px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img104239 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103855 
+                  onmouseover="popup(event,'','Booth:316<br>Size:40X40<BR> Atmel');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 709px; CURSOR: pointer; POSITION: absolute; TOP: 628px" 
+                  onmouseout=resolve();><IMG id=img103855 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=80 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=80></SPAN><SPAN id=BoothID106513 
+                  onmouseover="popup(event,'','Booth:333<br>Size:10X10<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 729px; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img106513 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID106510 
+                  onmouseover="popup(event,'','Booth:334<br>Size:20X10<BR> TechInsights');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 749px; CURSOR: pointer; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img106510 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103685 
+                  onmouseover="popup(event,'','Booth:335<br>Size:10X20<BR> PHYTEC America, LLC');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 709px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img103685 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103688 
+                  onmouseover="popup(event,'','Booth:336<br>Size:10X20<BR> Trimble');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 749px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img103688 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103686 
+                  onmouseover="popup(event,'','Booth:339<br>Size:10X20<BR> Coverity');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 709px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img103686 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103689 
+                  onmouseover="popup(event,'','Booth:340<br>Size:10X20<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 749px; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img103689 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104241 
+                  onmouseover="popup(event,'','Booth:343<br>Size:10X20<BR> esd electronics');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 709px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img104241 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103690 
+                  onmouseover="popup(event,'','Booth:344<br>Size:10X20<BR> McObject LLC');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 749px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img103690 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103854 
+                  onmouseover="popup(event,'','Booth:416<br>Size:50X50<BR> Microchip Technology');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 809px; CURSOR: pointer; POSITION: absolute; TOP: 608px" 
+                  onmouseout=resolve();><IMG id=img103854 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=100 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=100></SPAN><SPAN id=BoothID104259 
+                  onmouseover="popup(event,'','Booth:426<br>Size:20X20<BR> LeCroy Corporation');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 809px; CURSOR: pointer; POSITION: absolute; TOP: 548px" 
+                  onmouseout=resolve();><IMG id=img104259 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID104261 
+                  onmouseover="popup(event,'','Booth:430<br>Size:20X20<BR> Jauch Quartz America');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 809px; CURSOR: pointer; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img104261 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID103691 
+                  onmouseover="popup(event,'','Booth:435<br>Size:10X20<BR> WinSystems, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 769px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img103691 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104969 
+                  onmouseover="popup(event,'','Booth:436<br>Size:10X10<BR> Cymbet Corporation');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 809px; CURSOR: pointer; POSITION: absolute; TOP: 468px" 
+                  onmouseout=resolve();><IMG id=img104969 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104970 
+                  onmouseover="popup(event,'','Booth:438<br>Size:10X10<BR> Ocular');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 809px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img104970 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103692 
+                  onmouseover="popup(event,'','Booth:439<br>Size:10X20<BR> Phoenix Technologies');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 769px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img103692 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103693 
+                  onmouseover="popup(event,'','Booth:443<br>Size:10X20<BR> Datakey Electronics');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 769px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img103693 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104915 
+                  onmouseover="popup(event,'','Booth:444<br>Size:10X10<BR> Netronome');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 809px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img104915 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104267 
+                  onmouseover="popup(event,'','Booth:526<br>Size:20X20<BR> MCC Micro Computer Control Corp.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 869px; CURSOR: pointer; POSITION: absolute; TOP: 548px" 
+                  onmouseout=resolve();><IMG id=img104267 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID104269 
+                  onmouseover="popup(event,'','Booth:530<br>Size:20X20<BR> Monta Vista');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 869px; CURSOR: pointer; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img104269 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID104971 
+                  onmouseover="popup(event,'','Booth:535<br>Size:10X10<BR> Empress Software');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 829px; CURSOR: pointer; POSITION: absolute; TOP: 468px" 
+                  onmouseout=resolve();><IMG id=img104971 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104985 
+                  onmouseover="popup(event,'','Booth:536<br>Size:10X20<BR> Concurrent');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 869px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img104985 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104972 
+                  onmouseover="popup(event,'','Booth:537<br>Size:10X10<BR> eInfochips');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 829px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img104972 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105069 
+                  onmouseover="popup(event,'','Booth:539<br>Size:10X10<BR> Impinj');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 829px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img105069 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104959 
+                  onmouseover="popup(event,'','Booth:540<br>Size:10X20<BR> CPU Tech');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 869px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img104959 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105070 
+                  onmouseover="popup(event,'','Booth:541<br>Size:10X10<BR> ZeroG Wireless ');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 829px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img105070 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104917 
+                  onmouseover="popup(event,'','Booth:543<br>Size:10X10<BR> Gennum Corporation ');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 829px; CURSOR: pointer; POSITION: absolute; TOP: 388px" 
+                  onmouseout=resolve();><IMG id=img104917 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104927 
+                  onmouseover="popup(event,'','Booth:544<br>Size:10X10<BR> Axiom Manufacturing');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 869px; CURSOR: pointer; POSITION: absolute; TOP: 388px" 
+                  onmouseout=resolve();><IMG id=img104927 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104918 
+                  onmouseover="popup(event,'','Booth:545<br>Size:10X10<BR> ASIX Electronics Corporation');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 829px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img104918 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104928 
+                  onmouseover="popup(event,'','Booth:546<br>Size:10X10<BR> Embedded Works');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 869px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img104928 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103853 
+                  onmouseover="popup(event,'','Booth:616<br>Size:50X50<BR> Microsoft');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 929px; CURSOR: pointer; POSITION: absolute; TOP: 608px" 
+                  onmouseout=resolve();><IMG id=img103853 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=100 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=100></SPAN><SPAN id=BoothID103850 
+                  onmouseover="popup(event,'','Booth:626<br>Size:50X40<BR> DELL, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 929px; CURSOR: pointer; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img103850 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=80 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=100></SPAN><SPAN id=BoothID104987 
+                  onmouseover="popup(event,'','Booth:635<br>Size:10X20<BR> IEI Technology');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 889px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img104987 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104981 
+                  onmouseover="popup(event,'','Booth:636<br>Size:10X20<BR> Fastwel');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 929px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img104981 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104945 
+                  onmouseover="popup(event,'','Booth:639<br>Size:10X20<BR> Planar Systems');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 889px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img104945 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104948 
+                  onmouseover="popup(event,'','Booth:640<br>Size:10X20<BR> Programming Research');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 929px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img104948 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104919 
+                  onmouseover="popup(event,'','Booth:643<br>Size:10X10<BR> SlickEdit');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 889px; CURSOR: pointer; POSITION: absolute; TOP: 388px" 
+                  onmouseout=resolve();><IMG id=img104919 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104921 
+                  onmouseover="popup(event,'','Booth:644<br>Size:10X10<BR> Swissbit');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 929px; CURSOR: pointer; POSITION: absolute; TOP: 388px" 
+                  onmouseout=resolve();><IMG id=img104921 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104920 
+                  onmouseover="popup(event,'','Booth:645<br>Size:10X10<BR> IC Nexus');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 889px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img104920 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104922 
+                  onmouseover="popup(event,'','Booth:646<br>Size:10X10<BR> Mantaro Networks');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 929px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img104922 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104983 
+                  onmouseover="popup(event,'','Booth:735<br>Size:10X20<BR> BSquare');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 949px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img104983 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104953 
+                  onmouseover="popup(event,'','Booth:736<br>Size:20X20<BR> Macronix');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 989px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img104953 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID104968 
+                  onmouseover="popup(event,'','Booth:739<br>Size:10X20<BR> Faraday');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 949px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img104968 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105013 
+                  onmouseover="popup(event,'','Booth:740<br>Size:10X10<BR> LocoLabs');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 989px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img105013 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105014 
+                  onmouseover="popup(event,'','Booth:742<br>Size:10X10<BR> California Micro Devices');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 989px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img105014 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104929 
+                  onmouseover="popup(event,'','Booth:743<br>Size:10X10<BR> American Portwell Technology, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 949px; CURSOR: pointer; POSITION: absolute; TOP: 388px" 
+                  onmouseout=resolve();><IMG id=img104929 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104923 
+                  onmouseover="popup(event,'','Booth:744<br>Size:10X10<BR> Toradex');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 989px; CURSOR: pointer; POSITION: absolute; TOP: 388px" 
+                  onmouseout=resolve();><IMG id=img104923 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104930 
+                  onmouseover="popup(event,'','Booth:745<br>Size:10X10<BR> Real Time Systems GmbH');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 949px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img104930 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104924 
+                  onmouseover="popup(event,'','Booth:746<br>Size:10X10<BR> KwikByte');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 989px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img104924 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103847 
+                  onmouseover="popup(event,'','Booth:810<br>Size:30X40<BR> Numonyx');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1079px; CURSOR: pointer; POSITION: absolute; TOP: 668px" 
+                  onmouseout=resolve();><IMG id=img103847 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=80 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=60></SPAN><SPAN id=BoothID103852 
+                  onmouseover="popup(event,'','Booth:822<br>Size:50X30<BR> Green Hills Software');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1059px; CURSOR: pointer; POSITION: absolute; TOP: 588px" 
+                  onmouseout=resolve();><IMG id=img103852 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=100></SPAN><SPAN id=BoothID103848 
+                  onmouseover="popup(event,'','Booth:830<br>Size:50X30<BR> Texas Instruments');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1059px; CURSOR: pointer; POSITION: absolute; TOP: 508px" 
+                  onmouseout=resolve();><IMG id=img103848 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=60 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=100></SPAN><SPAN id=BoothID105089 
+                  onmouseover="popup(event,'','Booth:836<br>Size:10X10<BR> Artisan Software Tools, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1059px; CURSOR: pointer; POSITION: absolute; TOP: 468px" 
+                  onmouseout=resolve();><IMG id=img105089 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105090 
+                  onmouseover="popup(event,'','Booth:838<br>Size:10X10<BR> Tundra Semiconductor ');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1059px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img105090 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104954 
+                  onmouseover="popup(event,'','Booth:839<br>Size:10X20<BR> Samtec, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1009px; CURSOR: pointer; POSITION: absolute; TOP: 408px" 
+                  onmouseout=resolve();><IMG id=img104954 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104933 
+                  onmouseover="popup(event,'','Booth:840<br>Size:10X10<BR> Micro/sys, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1059px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img104933 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104925 
+                  onmouseover="popup(event,'','Booth:843<br>Size:10X20<BR> Advantech Corp.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1009px; CURSOR: pointer; POSITION: absolute; TOP: 368px" 
+                  onmouseout=resolve();><IMG id=img104925 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID105101 
+                  onmouseover="popup(event,'','Booth:935<br>Size:10X20<BR> Eurotech');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1079px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img105101 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID103857 
+                  onmouseover="popup(event,'','Booth:936<br>Size:20X20<BR> QNX Software Systems');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1119px; CURSOR: pointer; POSITION: absolute; TOP: 448px" 
+                  onmouseout=resolve();><IMG id=img103857 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=40 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=40></SPAN><SPAN id=BoothID104936 
+                  onmouseover="popup(event,'','Booth:939<br>Size:10X10<BR> UXD');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1079px; CURSOR: pointer; POSITION: absolute; TOP: 428px" 
+                  onmouseout=resolve();><IMG id=img104936 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=20 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=20></SPAN><SPAN id=BoothID104420 
+                  onmouseover="popup(event,'','Booth:TT2224<br>Size:7X5<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1129px; POSITION: absolute; TOP: 866px" 
+                  onmouseout=resolve();><IMG id=img104420 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=10 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=14></SPAN><SPAN id=BoothID104421 
+                  onmouseover="popup(event,'','Booth:TT2226<br>Size:7X5<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1151px; POSITION: absolute; TOP: 866px" 
+                  onmouseout=resolve();><IMG id=img104421 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=10 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=14></SPAN><SPAN id=BoothID104422 
+                  onmouseover="popup(event,'','Booth:TT2230<br>Size:7X5<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1191px; POSITION: absolute; TOP: 866px" 
+                  onmouseout=resolve();><IMG id=img104422 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=10 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=14></SPAN><SPAN id=BoothID104423 
+                  onmouseover="popup(event,'','Booth:TT2232<br>Size:7X5<BR>Available');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1211px; POSITION: absolute; TOP: 866px" 
+                  onmouseout=resolve();><IMG id=img104423 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=10 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=14></SPAN><SPAN id=BoothID104424 
+                  onmouseover="popup(event,'','Booth:TT2236<br>Size:7X5<BR> Vesta Technology, Inc.');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1261px; CURSOR: pointer; POSITION: absolute; TOP: 866px" 
+                  onmouseout=resolve();><IMG id=img104424 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=10 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=14></SPAN><SPAN id=BoothID104415 
+                  onmouseover="popup(event,'','Booth:TT2238<br>Size:7X5<BR> Roving Networks');" 
+                  style="Z-INDEX: 5; FILTER: Alpha(Opacity=0); LEFT: 1281px; CURSOR: pointer; POSITION: absolute; TOP: 866px" 
+                  onmouseout=resolve();><IMG id=img104415 
+                  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                  height=10 src="floorPlan_files/Booth_Highlighted.gif" 
+                  width=14></SPAN></SPAN> 
+                  <DIV id=divBottom 
+                  style="Z-INDEX: 1; LEFT: 20px; POSITION: absolute; TOP: 1136px"><BR><BR><BR><BR><BR><BR><SPAN 
+                  id=lblThumbNailLegend></SPAN><BR><BR>
+                  <P><BR><BR></P></DIV><INPUT id=hdnMapId type=hidden value=11 
+                  name=hdnMapId> <INPUT id=Task type=hidden name=Task> <INPUT 
+                  id=hdnScale type=hidden name=hdnScale> <INPUT id=hdnImgTop 
+                  type=hidden value=250 name=hdnImgTop> <INPUT id=hdnImgLeft 
+                  type=hidden value=20 name=hdnImgLeft> <INPUT id=hdnBoothIds 
+                  style="Z-INDEX: 107" type=hidden name=hdnBoothIds>
+                  <SCRIPT language=javascript event=onload for=window>
+<!--
+return window_onload()
+//-->
+</SCRIPT>
+                   
+                  <BLOCKQUOTE></BLOCKQUOTE></TD></TR>
+              <TR>
+                <TD>
+                  <SCRIPT>
+									var strtop= document.getElementById('divBottom').style.top;
+									var strleft= document.getElementById('divBottom').style.left;
+									var divleft = eval(strleft.substring(0,strleft.indexOf("p")))- 100;	
+									var divTop = eval(strtop.substring(0,strtop.indexOf("p"))) + 600; 
+								
+									document.write("<div class='footer' id='footer1' style='position:absolute;top:" + divTop + ";left:" + divleft + "'>");
+								</SCRIPT>
+
+                  <P>
+                  <HR width=500>
+
+                  <CENTER><SPAN class="">&nbsp;<P>&nbsp;</P></SPAN>&nbsp;</CENTER>
+                  <P></P>
+                  <DIV></DIV></TD></TR></TBODY></TABLE></TD></TR>
+        <TR align=middle>
+          <TD>
+            <SCRIPT>
+								
+									var strtop= document.getElementById('divBottom').style.top;																
+									var divTop = eval(strtop.substring(0,strtop.indexOf("p"))) + 450; 
+									document.write("<div class='footer' id='footer2' style='position:absolute;top:" + divTop + ";left:" + divleft + "'>");
+								</SCRIPT>
+<!--<p><center><p><font class=copyright>Copyright 2003, a2z, Inc. All rights reserved.</font></p><a href='http://www.a2zshow.com' target=_blank><img src='../images/poweredbya2z.gif' border=0 alt='Powered by a2z'></a></center></center></p>-->
+            <DIV></DIV></TD></TR></TBODY></TABLE></FORM></TR></TBODY></DIV></BODY></HTML>

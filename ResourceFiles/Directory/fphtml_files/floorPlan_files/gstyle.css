@@ -1,0 +1,9 @@
+.clsErrorMsg {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: red; FONT-FAMILY: Verdana
+}
+.clsInfoMsg {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: black; FONT-FAMILY: Verdana
+}
+.clsConfirmMsg {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #66cc00; FONT-FAMILY: Verdana
+}

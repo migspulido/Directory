@@ -1,0 +1,2 @@
+C:\Users\Migs\Documents\Visual Studio 2005\Projects\Directory\Directory\obj\Debug\Directory.exe
+C:\Users\Migs\Documents\Visual Studio 2005\Projects\Directory\Directory\obj\Debug\Directory.pdb

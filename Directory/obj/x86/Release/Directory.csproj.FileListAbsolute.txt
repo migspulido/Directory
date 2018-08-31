@@ -1,0 +1,8 @@
+C:\Users\archangel\Documents\Visual Studio 2008\Projects\Directory\Directory\bin\x86\Release\Directory.exe
+C:\Users\archangel\Documents\Visual Studio 2008\Projects\Directory\Directory\bin\x86\Release\Directory.pdb
+C:\Users\archangel\Documents\Visual Studio 2008\Projects\Directory\Directory\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\archangel\Documents\Visual Studio 2008\Projects\Directory\Directory\obj\x86\Release\Directory.Form1.resources
+C:\Users\archangel\Documents\Visual Studio 2008\Projects\Directory\Directory\obj\x86\Release\Directory.Properties.Resources.resources
+C:\Users\archangel\Documents\Visual Studio 2008\Projects\Directory\Directory\obj\x86\Release\Directory.csproj.GenerateResource.Cache
+C:\Users\archangel\Documents\Visual Studio 2008\Projects\Directory\Directory\obj\x86\Release\Directory.exe
+C:\Users\archangel\Documents\Visual Studio 2008\Projects\Directory\Directory\obj\x86\Release\Directory.pdb
