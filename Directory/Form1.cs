@@ -1,8 +1,7 @@
+///Miguel Pulido - Systems Architect
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-///Miguel Pulido - Systems Architect
-
 using System.Data;
 using System.Drawing;
 using System.Text;
